@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/albums"
+        android:layout_width="415dp"
+        android:layout_height="475dp"
+        android:layout_marginBottom="21dp"
+        android:background="#FFFFFF"
+        android:backgroundTintMode="add"
+        android:cacheColorHint="@color/colorPrimaryDark"
+        android:divider="@color/cardview_shadow_start_color"
+
+        android:forceDarkAllowed="true"
+        android:textColor="#FFFFFF"
+        android:textFilterEnabled="false"
+        app:layout_constraintBottom_toTopOf="@+id/searchTags"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/add_album"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="500dp"
+        android:text="Add Album"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/searchTags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="6dp"
+        android:text="Search by Tags"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/add_album"
+        app:layout_constraintTop_toBottomOf="@+id/albums" />
+
+    <Button
+        android:id="@+id/remove_album"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="275dp"
+        android:layout_marginTop="500dp"
+        android:onClick="removeAlbum"
+        android:text="Remove Album"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/searchTags"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="511dp" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

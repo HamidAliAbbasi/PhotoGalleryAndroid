@@ -1,0 +1,67 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dip">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Location"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/addLocationButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Location" />
+
+        <Button
+            android:id="@+id/removeLocationButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remove Location" />
+
+        <ListView
+            android:id="@+id/locations"
+            android:layout_width="match_parent"
+            android:layout_height="206dp"
+            android:layout_marginTop="10dip"
+            android:background="#373737"></ListView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:gravity="center_vertical"
+            android:text="Person" />
+
+        <Button
+            android:id="@+id/addPersonButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C7FFFFFF"
+            android:text="Add Person" />
+
+        <Button
+            android:id="@+id/removePersonButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remove Person" />
+
+        <ListView
+            android:id="@+id/persons"
+            android:layout_width="match_parent"
+            android:layout_height="201dp"
+            android:layout_marginTop="10dip"
+            android:background="#393A3A"></ListView>
+    </LinearLayout>
+
+</ScrollView>

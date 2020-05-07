@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".SlideshowActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="401dp"
+        tools:srcCompat="@tools:sample/avatars[0]" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-380dp"
+        android:layout_marginTop="450dp"
+        android:onClick="prevPhoto"
+        android:text="Previous" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:onClick="nextPhoto"
+        android:text="Next" />
+
+    <Button
+        android:id="@+id/editTags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:onClick="changeToEditTagsActivity"
+        android:text="Edit Tags" />
+
+    <Button
+        android:id="@+id/moveToAlbum"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="442dp"
+        android:text="Move to Album" />
+
+    />
+</LinearLayout>
